@@ -4,6 +4,10 @@ This repository is the implementation of paper: Deep Extreme Multi Label Learnin
 ## Model Architecture
 ![Model Architecture](https://github.com/theGuyWithBlackTie/Deep-Extreme-Multi-Label-Learning/blob/main/model%20architecture.png)
 
+The input text (i.e. X-Space) is being converted into the embeddings by linear layers. Similarly, from the label graph, each label's embedding is obtained with [DeepWalk](https://github.com/phanein/deepwalk) algorithm. With the help of smooth-L1 loss function, distances between input embeddings and label embeddings are tried to be minimized.
+
+After training, train embeddings are clustered. For each test record, the closest cluster is found. In the closest cluster, nearest neighbours are found whose original labels are assigned to the test records in an empirical fashion.
+
 ## To Run:
 ```
 python app.py --dataset <Bibtex/Delicious/MediaMill> --doTrain <True/False>
