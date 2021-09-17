@@ -13,7 +13,7 @@ After training, train embeddings are clustered. For each test record, the closes
 python app.py --dataset <Bibtex/Delicious/MediaMill> --doTrain <True/False>
 ```
 
-The code automatically generates the label embeddings if they are not present by internally running python subprocess to run [DeepWalk](https://github.com/phanein/deepwalk) algorithm.
+The code automatically generates the label embeddings if they are not present by internally running python subprocess to run [DeepWalk](https://github.com/phanein/deepwalk) algorithm. You only have to make sure [DeepWalk](https://github.com/phanein/deepwalk) algorithm is installed in the system.
 
 This paper has used 6 different datasets to show the robustness of the methodology. These 6 different datasets are sub-divided into 2 categories: <b>small</b> and <b>large</b>. Each sub-division consists of 3 datasets each. <i>Small</i> dataset has less number of labels to predict and numbers of records are less as well as compared to <i>large</i> datasets. Due to hardware challenges, this code has only used <i>small</i> dataset.
 
