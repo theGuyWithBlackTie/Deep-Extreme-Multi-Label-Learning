@@ -29,3 +29,5 @@ Currently, results obtained for Bibtex dataset are:
 
 The obtained results are slightly less than the results shared in the paper.
 
+<b>Imp:</b>All datasets can be obtained from [here](http://manikvarma.org/downloads/XC/XMLRepository.html).
+
