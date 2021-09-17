@@ -22,4 +22,8 @@ This paper has used 6 different datasets to show the robustness of the methodolo
 
 The major challenge in replicating this paper's results is getting the right hyperparameters. Hyperparameters are not shared in the paper, and due to this, I was only able to obtain the results for Bibtex dataset. Additionally, the Delicious and MediaMill dataset which was used has has many records which has only input word and more than 10 associated labels which makes it really difficult to make algorithm learn correctly.
 
+Currently, results obtained for Bibtex dataset are:
+![Bibtex Result](https://github.com/theGuyWithBlackTie/Deep-Extreme-Multi-Label-Learning/blob/main/obtained_result.png)
+
+The obtained results are slightly less than the results shared in the paper.
 
